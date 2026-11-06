@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Florida Landscape Plants | Austin Garcia</title>
+<meta name="description" content="19 Florida and tropical landscape plants in 3D for architectural and landscape visualisation, by Austin Garcia.">
+<style>
+:root { --bg: #f4f2ee; --ink: #26251f; --soft: #6b675e; --line: #dcd8d0; --card: #ffffff; --accent: #4f6b3a; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1c1c19; --ink: #ecebe6; --soft: #a9a59b; --line: #34332e; --card: #262622; --accent: #9cbc7e; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif; }
+img { display: block; width: 100%; height: auto; border-radius: 6px; background: #c9c6c0; }
+a { color: inherit; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 16px; }
+.top { padding: 64px 0 24px; }
+.top h1 { font-size: clamp(32px, 5vw, 54px); line-height: 1.1; margin: 0 0 8px; letter-spacing: -0.01em; }
+.top p { color: var(--soft); max-width: 720px; margin: 6px 0; }
+.lead { font-size: 19px; color: var(--ink) !important; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: 18px 0 0; font-size: 15px; }
+nav a { color: var(--accent); text-decoration: none; }
+h2 { font-size: 28px; margin: 64px 0 8px; }
+h2 + p { color: var(--soft); margin-top: 0; max-width: 760px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; margin-top: 20px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 8px 8px 12px; text-decoration: none; display: flex; flex-direction: column; }
+.card img { aspect-ratio: 2 / 1; object-fit: cover; }
+.card .name { font-weight: 600; margin: 8px 4px 0; }
+.card .latin { font-style: italic; color: var(--soft); font-size: 14px; margin: 0 4px; }
+.plant { border-top: 1px solid var(--line); padding: 36px 0 8px; }
+.plant h3 { font-size: 24px; margin: 0; }
+.meta { color: var(--soft); margin: 2px 0 14px; }
+.shot { display: block; margin: 0 0 14px; }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.pair .shot { margin: 0 0 14px; }
+.facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; margin-top: 18px; }
+.fact { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+.fact b { display: block; font-size: 22px; }
+footer { color: var(--soft); font-size: 14px; padding: 48px 0 64px; border-top: 1px solid var(--line); margin-top: 48px; }
+@media (max-width: 640px) { .pair { grid-template-columns: 1fr; } body { font-size: 16px; } .top { padding-top: 40px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <h1>Florida Landscape Plants</h1>
+  <p class="lead">19 plants from Florida yards in 3D, for architectural and landscape renders: palms, cycads, birds of
+  paradise, bromeliads, clipped hedge shrubs, shade trees, grasses and groundcover.</p>
+  <p>By Austin Garcia. Built in Blender from each plant's real growth structure, at real size, in four sizes from young to
+  large, each with a light version for the middle distance. Coming soon to Superhive.</p>
+  <nav><a href="#collection">The collection</a><a href="#plants">Every plant</a><a href="#light">Light versions</a><a href="#formats">FBX and glTF</a><a href="#made">How they are made</a></nav>
+</header>
+
+<div class="facts">
+  <div class="fact"><b>19 plants</b>6 of them Florida natives</div>
+  <div class="fact"><b>194 versions</b>4 sizes each, full detail and light</div>
+  <div class="fact"><b>5 clipped shapes</b>for the four hedge shrubs</div>
+  <div class="fact"><b>Blender, FBX, glTF</b>Asset Browser ready; baked textures for other programs</div>
+</div>
+
+<h2 id="collection">The collection</h2>
+<p>Every plant at its mature size, rendered in Blender Cycles in the same studio light.</p>
+<div class="grid"><a class="card" href="#cabbage_palm"><img src="img/cabbage_palm_cover.jpg" alt="Cabbage palm, mature" loading="lazy"><span class="name">Cabbage palm</span><span class="latin">Sabal palmetto</span></a>
+<a class="card" href="#foxtail_palm"><img src="img/foxtail_palm_cover.jpg" alt="Foxtail palm, mature" loading="lazy"><span class="name">Foxtail palm</span><span class="latin">Wodyetia bifurcata</span></a>
+<a class="card" href="#coontie"><img src="img/coontie_cover.jpg" alt="Coontie, mature" loading="lazy"><span class="name">Coontie</span><span class="latin">Zamia integrifolia</span></a>
+<a class="card" href="#king_sago"><img src="img/king_sago_cover.jpg" alt="King sago, mature" loading="lazy"><span class="name">King sago</span><span class="latin">Cycas revoluta</span></a>
+<a class="card" href="#bird_of_paradise"><img src="img/bird_of_paradise_cover.jpg" alt="Bird of paradise, mature" loading="lazy"><span class="name">Bird of paradise</span><span class="latin">Strelitzia reginae</span></a>
+<a class="card" href="#ti_plant"><img src="img/ti_plant_cover.jpg" alt="Ti plant, mature" loading="lazy"><span class="name">Ti plant</span><span class="latin">Cordyline fruticosa</span></a>
+<a class="card" href="#white_bird_of_paradise"><img src="img/white_bird_of_paradise_cover.jpg" alt="White bird of paradise, mature" loading="lazy"><span class="name">White bird of paradise</span><span class="latin">Strelitzia nicolai</span></a>
+<a class="card" href="#foxtail_agave"><img src="img/foxtail_agave_cover.jpg" alt="Foxtail agave, mature" loading="lazy"><span class="name">Foxtail agave</span><span class="latin">Agave attenuata</span></a>
+<a class="card" href="#giant_bromeliad"><img src="img/giant_bromeliad_cover.jpg" alt="Giant bromeliad, mature" loading="lazy"><span class="name">Giant bromeliad</span><span class="latin">Alcantarea imperialis</span></a>
+<a class="card" href="#neoregelia"><img src="img/neoregelia_cover.jpg" alt="Neoregelia, mature" loading="lazy"><span class="name">Neoregelia</span><span class="latin">Neoregelia carolinae</span></a>
+<a class="card" href="#clusia"><img src="img/clusia_cover.jpg" alt="Clusia, mature" loading="lazy"><span class="name">Clusia</span><span class="latin">Clusia guttifera</span></a>
+<a class="card" href="#firebush"><img src="img/firebush_cover.jpg" alt="Firebush, mature" loading="lazy"><span class="name">Firebush</span><span class="latin">Hamelia patens</span></a>
+<a class="card" href="#podocarpus"><img src="img/podocarpus_cover.jpg" alt="Podocarpus, mature" loading="lazy"><span class="name">Podocarpus</span><span class="latin">Podocarpus macrophyllus</span></a>
+<a class="card" href="#simpsons_stopper"><img src="img/simpsons_stopper_cover.jpg" alt="Simpson&#x27;s stopper, mature" loading="lazy"><span class="name">Simpson&#x27;s stopper</span><span class="latin">Myrcianthes fragrans</span></a>
+<a class="card" href="#crape_myrtle"><img src="img/crape_myrtle_cover.jpg" alt="Crape myrtle, mature" loading="lazy"><span class="name">Crape myrtle</span><span class="latin">Lagerstroemia indica</span></a>
+<a class="card" href="#sand_live_oak"><img src="img/sand_live_oak_cover.jpg" alt="Sand live oak, mature" loading="lazy"><span class="name">Sand live oak</span><span class="latin">Quercus geminata</span></a>
+<a class="card" href="#flax_lily"><img src="img/flax_lily_cover.jpg" alt="Flax lily, mature" loading="lazy"><span class="name">Flax lily</span><span class="latin">Dianella</span></a>
+<a class="card" href="#muhly_grass"><img src="img/muhly_grass_cover.jpg" alt="Muhly grass, mature" loading="lazy"><span class="name">Muhly grass</span><span class="latin">Muhlenbergia capillaris</span></a>
+<a class="card" href="#perennial_peanut"><img src="img/perennial_peanut_cover.jpg" alt="Perennial peanut, mature" loading="lazy"><span class="name">Perennial peanut</span><span class="latin">Arachis glabrata</span></a></div>
+
+<h2 id="plants">Every plant</h2>
+<p>Each in full, close up, and in its four sizes: a new planting and an established yard need different plants, not one plant scaled.</p>
+
+<section class="plant" id="cabbage_palm">
+  <header>
+    <h3>Cabbage palm</h3>
+    <p class="meta"><em>Sabal palmetto</em> &middot; Florida native &middot; Palms &middot; 2.0 to 10.9 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/cabbage_palm_hero.jpg"><img src="img/cabbage_palm_hero.jpg" alt="Cabbage palm, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/cabbage_palm_detail.jpg"><img src="img/cabbage_palm_detail.jpg" alt="Cabbage palm, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/cabbage_palm_sizes.jpg"><img src="img/cabbage_palm_sizes.jpg" alt="Cabbage palm in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="foxtail_palm">
+  <header>
+    <h3>Foxtail palm</h3>
+    <p class="meta"><em>Wodyetia bifurcata</em> &middot; Palms &middot; 2.0 to 10.1 m tall &middot; 10 versions</p>
+  </header>
+  <a class="shot " href="img/foxtail_palm_hero.jpg"><img src="img/foxtail_palm_hero.jpg" alt="Foxtail palm, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/foxtail_palm_detail.jpg"><img src="img/foxtail_palm_detail.jpg" alt="Foxtail palm, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/foxtail_palm_sizes.jpg"><img src="img/foxtail_palm_sizes.jpg" alt="Foxtail palm in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  <a class="shot " href="img/foxtail_palm_nofruit.jpg"><img src="img/foxtail_palm_nofruit.jpg" alt="Foxtail palm: with and without fruit" loading="lazy" width="1600" height="800"></a>
+</section>
+
+<section class="plant" id="coontie">
+  <header>
+    <h3>Coontie</h3>
+    <p class="meta"><em>Zamia integrifolia</em> &middot; Florida native &middot; Cycads &middot; 0.3 to 1.1 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/coontie_hero.jpg"><img src="img/coontie_hero.jpg" alt="Coontie, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/coontie_detail.jpg"><img src="img/coontie_detail.jpg" alt="Coontie, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/coontie_sizes.jpg"><img src="img/coontie_sizes.jpg" alt="Coontie in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="king_sago">
+  <header>
+    <h3>King sago</h3>
+    <p class="meta"><em>Cycas revoluta</em> &middot; Cycads &middot; 0.5 to 2.1 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/king_sago_hero.jpg"><img src="img/king_sago_hero.jpg" alt="King sago, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/king_sago_detail.jpg"><img src="img/king_sago_detail.jpg" alt="King sago, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/king_sago_sizes.jpg"><img src="img/king_sago_sizes.jpg" alt="King sago in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="bird_of_paradise">
+  <header>
+    <h3>Bird of paradise</h3>
+    <p class="meta"><em>Strelitzia reginae</em> &middot; Tropical accents &middot; 0.5 to 1.6 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/bird_of_paradise_hero.jpg"><img src="img/bird_of_paradise_hero.jpg" alt="Bird of paradise, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/bird_of_paradise_detail.jpg"><img src="img/bird_of_paradise_detail.jpg" alt="Bird of paradise, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/bird_of_paradise_sizes.jpg"><img src="img/bird_of_paradise_sizes.jpg" alt="Bird of paradise in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="ti_plant">
+  <header>
+    <h3>Ti plant</h3>
+    <p class="meta"><em>Cordyline fruticosa</em> &middot; Tropical accents &middot; 0.8 to 3.0 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/ti_plant_hero.jpg"><img src="img/ti_plant_hero.jpg" alt="Ti plant, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/ti_plant_detail.jpg"><img src="img/ti_plant_detail.jpg" alt="Ti plant, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/ti_plant_sizes.jpg"><img src="img/ti_plant_sizes.jpg" alt="Ti plant in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="white_bird_of_paradise">
+  <header>
+    <h3>White bird of paradise</h3>
+    <p class="meta"><em>Strelitzia nicolai</em> &middot; Tropical accents &middot; 1.2 to 6.4 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/white_bird_of_paradise_hero.jpg"><img src="img/white_bird_of_paradise_hero.jpg" alt="White bird of paradise, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/white_bird_of_paradise_detail.jpg"><img src="img/white_bird_of_paradise_detail.jpg" alt="White bird of paradise, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/white_bird_of_paradise_sizes.jpg"><img src="img/white_bird_of_paradise_sizes.jpg" alt="White bird of paradise in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="foxtail_agave">
+  <header>
+    <h3>Foxtail agave</h3>
+    <p class="meta"><em>Agave attenuata</em> &middot; Bromeliads and succulents &middot; 0.3 to 1.1 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/foxtail_agave_hero.jpg"><img src="img/foxtail_agave_hero.jpg" alt="Foxtail agave, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/foxtail_agave_detail.jpg"><img src="img/foxtail_agave_detail.jpg" alt="Foxtail agave, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/foxtail_agave_sizes.jpg"><img src="img/foxtail_agave_sizes.jpg" alt="Foxtail agave in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="giant_bromeliad">
+  <header>
+    <h3>Giant bromeliad</h3>
+    <p class="meta"><em>Alcantarea imperialis</em> &middot; Bromeliads and succulents &middot; 0.3 to 1.1 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/giant_bromeliad_hero.jpg"><img src="img/giant_bromeliad_hero.jpg" alt="Giant bromeliad, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/giant_bromeliad_detail.jpg"><img src="img/giant_bromeliad_detail.jpg" alt="Giant bromeliad, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/giant_bromeliad_sizes.jpg"><img src="img/giant_bromeliad_sizes.jpg" alt="Giant bromeliad in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="neoregelia">
+  <header>
+    <h3>Neoregelia</h3>
+    <p class="meta"><em>Neoregelia carolinae</em> &middot; Bromeliads and succulents &middot; 0.1 to 0.3 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/neoregelia_hero.jpg"><img src="img/neoregelia_hero.jpg" alt="Neoregelia, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/neoregelia_detail.jpg"><img src="img/neoregelia_detail.jpg" alt="Neoregelia, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/neoregelia_sizes.jpg"><img src="img/neoregelia_sizes.jpg" alt="Neoregelia in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="clusia">
+  <header>
+    <h3>Clusia</h3>
+    <p class="meta"><em>Clusia guttifera</em> &middot; Shrubs and hedges &middot; 0.6 to 2.3 m tall &middot; 18 versions</p>
+  </header>
+  <a class="shot " href="img/clusia_hero.jpg"><img src="img/clusia_hero.jpg" alt="Clusia, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/clusia_detail.jpg"><img src="img/clusia_detail.jpg" alt="Clusia, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/clusia_sizes.jpg"><img src="img/clusia_sizes.jpg" alt="Clusia in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  <a class="shot " href="img/clusia_shapes.jpg"><img src="img/clusia_shapes.jpg" alt="Clusia: clipped shapes" loading="lazy" width="1600" height="800"></a>
+</section>
+
+<section class="plant" id="firebush">
+  <header>
+    <h3>Firebush</h3>
+    <p class="meta"><em>Hamelia patens</em> &middot; Florida native &middot; Shrubs and hedges &middot; 0.7 to 2.7 m tall &middot; 18 versions</p>
+  </header>
+  <a class="shot " href="img/firebush_hero.jpg"><img src="img/firebush_hero.jpg" alt="Firebush, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/firebush_detail.jpg"><img src="img/firebush_detail.jpg" alt="Firebush, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/firebush_sizes.jpg"><img src="img/firebush_sizes.jpg" alt="Firebush in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  <a class="shot " href="img/firebush_shapes.jpg"><img src="img/firebush_shapes.jpg" alt="Firebush: clipped shapes" loading="lazy" width="1600" height="800"></a>
+</section>
+
+<section class="plant" id="podocarpus">
+  <header>
+    <h3>Podocarpus</h3>
+    <p class="meta"><em>Podocarpus macrophyllus</em> &middot; Shrubs and hedges &middot; 1.0 to 4.3 m tall &middot; 18 versions</p>
+  </header>
+  <a class="shot " href="img/podocarpus_hero.jpg"><img src="img/podocarpus_hero.jpg" alt="Podocarpus, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/podocarpus_detail.jpg"><img src="img/podocarpus_detail.jpg" alt="Podocarpus, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/podocarpus_sizes.jpg"><img src="img/podocarpus_sizes.jpg" alt="Podocarpus in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  <a class="shot " href="img/podocarpus_shapes.jpg"><img src="img/podocarpus_shapes.jpg" alt="Podocarpus: clipped shapes" loading="lazy" width="1600" height="800"></a>
+</section>
+
+<section class="plant" id="simpsons_stopper">
+  <header>
+    <h3>Simpson&#x27;s stopper</h3>
+    <p class="meta"><em>Myrcianthes fragrans</em> &middot; Florida native &middot; Shrubs and hedges &middot; 0.9 to 3.7 m tall &middot; 18 versions</p>
+  </header>
+  <a class="shot " href="img/simpsons_stopper_hero.jpg"><img src="img/simpsons_stopper_hero.jpg" alt="Simpson&#x27;s stopper, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/simpsons_stopper_detail.jpg"><img src="img/simpsons_stopper_detail.jpg" alt="Simpson&#x27;s stopper, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/simpsons_stopper_sizes.jpg"><img src="img/simpsons_stopper_sizes.jpg" alt="Simpson&#x27;s stopper in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  <a class="shot " href="img/simpsons_stopper_shapes.jpg"><img src="img/simpsons_stopper_shapes.jpg" alt="Simpson&#x27;s stopper: clipped shapes" loading="lazy" width="1600" height="800"></a>
+</section>
+
+<section class="plant" id="crape_myrtle">
+  <header>
+    <h3>Crape myrtle</h3>
+    <p class="meta"><em>Lagerstroemia indica</em> &middot; Trees &middot; 2.1 to 8.1 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/crape_myrtle_hero.jpg"><img src="img/crape_myrtle_hero.jpg" alt="Crape myrtle, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/crape_myrtle_detail.jpg"><img src="img/crape_myrtle_detail.jpg" alt="Crape myrtle, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/crape_myrtle_sizes.jpg"><img src="img/crape_myrtle_sizes.jpg" alt="Crape myrtle in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="sand_live_oak">
+  <header>
+    <h3>Sand live oak</h3>
+    <p class="meta"><em>Quercus geminata</em> &middot; Florida native &middot; Trees &middot; 2.6 to 8.5 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/sand_live_oak_hero.jpg"><img src="img/sand_live_oak_hero.jpg" alt="Sand live oak, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/sand_live_oak_detail.jpg"><img src="img/sand_live_oak_detail.jpg" alt="Sand live oak, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/sand_live_oak_sizes.jpg"><img src="img/sand_live_oak_sizes.jpg" alt="Sand live oak in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="flax_lily">
+  <header>
+    <h3>Flax lily</h3>
+    <p class="meta"><em>Dianella</em> &middot; Grasses and groundcover &middot; 0.2 to 0.7 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/flax_lily_hero.jpg"><img src="img/flax_lily_hero.jpg" alt="Flax lily, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/flax_lily_detail.jpg"><img src="img/flax_lily_detail.jpg" alt="Flax lily, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/flax_lily_sizes.jpg"><img src="img/flax_lily_sizes.jpg" alt="Flax lily in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="muhly_grass">
+  <header>
+    <h3>Muhly grass</h3>
+    <p class="meta"><em>Muhlenbergia capillaris</em> &middot; Florida native &middot; Grasses and groundcover &middot; 0.5 to 1.6 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/muhly_grass_hero.jpg"><img src="img/muhly_grass_hero.jpg" alt="Muhly grass, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/muhly_grass_detail.jpg"><img src="img/muhly_grass_detail.jpg" alt="Muhly grass, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/muhly_grass_sizes.jpg"><img src="img/muhly_grass_sizes.jpg" alt="Muhly grass in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<section class="plant" id="perennial_peanut">
+  <header>
+    <h3>Perennial peanut</h3>
+    <p class="meta"><em>Arachis glabrata</em> &middot; Grasses and groundcover &middot; 0.1 to 0.2 m tall &middot; 8 versions</p>
+  </header>
+  <a class="shot " href="img/perennial_peanut_hero.jpg"><img src="img/perennial_peanut_hero.jpg" alt="Perennial peanut, mature" loading="lazy" width="1600" height="800"></a>
+  <div class="pair"><a class="shot " href="img/perennial_peanut_detail.jpg"><img src="img/perennial_peanut_detail.jpg" alt="Perennial peanut, close up" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/perennial_peanut_sizes.jpg"><img src="img/perennial_peanut_sizes.jpg" alt="Perennial peanut in four sizes, young to large" loading="lazy" width="1200" height="600"></a></div>
+  
+</section>
+
+<h2 id="light">Light versions</h2>
+<p>Every size also comes as a light version with a fraction of the polygons, the same shape and the same materials, for
+the middle and far distance of a scene.</p>
+<div class="pair"><a class="shot " href="img/bird_of_paradise_light.jpg"><img src="img/bird_of_paradise_light.jpg" alt="Bird of paradise, full detail beside the light version" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/crape_myrtle_light.jpg"><img src="img/crape_myrtle_light.jpg" alt="Crape myrtle, full detail beside the light version" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/clusia_light.jpg"><img src="img/clusia_light.jpg" alt="Clusia, full detail beside the light version" loading="lazy" width="1200" height="600"></a><a class="shot " href="img/cabbage_palm_light.jpg"><img src="img/cabbage_palm_light.jpg" alt="Cabbage palm, full detail beside the light version" loading="lazy" width="1200" height="600"></a></div>
+
+<h2 id="formats">FBX and glTF</h2>
+<p>For programs and game engines other than Blender, every version is baked to image textures (base colour, roughness,
+normal, leaf underside colour and translucency) and exported as FBX and glTF 2.0. Below, the glTF files imported into a
+fresh Blender, as a buyer would.</p>
+<a class="shot " href="img/import_checks.jpg"><img src="img/import_checks.jpg" alt="The glTF files imported into Blender" loading="lazy" width="1600" height="960"></a>
+
+<h2 id="made">How they are made</h2>
+<p>The plants are built from botanical reference, real photos of each species, and its real structure: how the leaves
+grow, how a palm's fronds sit, how a hedge is clipped. The 3D models and materials are generated by Blender Python
+scripts written by an AI coding assistant under my direction, then reviewed and corrected by hand against the reference
+photos, plant by plant. No text-to-3D, image-to-3D or AI image generators were used.</p>
+
+<footer>&copy; 2026 Austin Garcia. Plants and images by the author; all renders made in Blender.</footer>
+</div>
+</body>
+</html>
