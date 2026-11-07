@@ -35,6 +35,11 @@ h2 + p { color: var(--soft); margin-top: 0; max-width: 760px; }
 .facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; margin-top: 18px; }
 .fact { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
 .fact b { display: block; font-size: 22px; }
+.caption { color: var(--soft); margin: -6px 0 22px; font-size: 15px; }
+.spins { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; margin-top: 20px; }
+.spin { margin: 0; }
+.spin video { display: block; width: 100%; height: auto; border-radius: 6px; background: #c9c6c0; }
+.spin figcaption { color: var(--soft); font-size: 15px; margin-top: 6px; }
 footer { color: var(--soft); font-size: 14px; padding: 48px 0 64px; border-top: 1px solid var(--line); margin-top: 48px; }
 @media (max-width: 640px) { .pair { grid-template-columns: 1fr; } body { font-size: 16px; } .top { padding-top: 40px; } }
 </style>
@@ -47,7 +52,7 @@ footer { color: var(--soft); font-size: 14px; padding: 48px 0 64px; border-top: 
   paradise, bromeliads, clipped hedge shrubs, shade trees, grasses and groundcover.</p>
   <p>By Austin Garcia. Built in Blender from each plant's real growth structure, at real size, in four sizes from young to
   large, each with a light version for the middle distance. Coming soon to Superhive.</p>
-  <nav><a href="#collection">The collection</a><a href="#plants">Every plant</a><a href="#light">Light versions</a><a href="#formats">FBX and glTF</a><a href="#made">How they are made</a></nav>
+  <nav><a href="#collection">The collection</a><a href="#gardens">In the garden</a><a href="#turntables">Turntables</a><a href="#plants">Every plant</a><a href="#light">Light versions</a><a href="#formats">FBX and glTF</a><a href="#made">How they are made</a></nav>
 </header>
 
 <div class="facts">
@@ -78,6 +83,13 @@ footer { color: var(--soft); font-size: 14px; padding: 48px 0 64px; border-top: 
 <a class="card" href="#flax_lily"><img src="img/flax_lily_cover.jpg" alt="Flax lily, mature" loading="lazy"><span class="name">Flax lily</span><span class="latin">Dianella</span></a>
 <a class="card" href="#muhly_grass"><img src="img/muhly_grass_cover.jpg" alt="Muhly grass, mature" loading="lazy"><span class="name">Muhly grass</span><span class="latin">Muhlenbergia capillaris</span></a>
 <a class="card" href="#perennial_peanut"><img src="img/perennial_peanut_cover.jpg" alt="Perennial peanut, mature" loading="lazy"><span class="name">Perennial peanut</span><span class="latin">Arachis glabrata</span></a></div>
+
+<h2 id="gardens">In the garden</h2>
+<p>The library plants set out together in three Florida yards, as they come, rendered in Blender Cycles.</p>
+<a class="shot " href="img/scene_entry.jpg"><img src="img/scene_entry.jpg" alt="A ranch house front bed: clusia under the windows, podocarpus, firebush, coontie, Neoregelia, flax lily edging, ti plants and a cabbage palm group." loading="lazy" width="1600" height="800"></a><p class="caption">A ranch house front bed: clusia under the windows, podocarpus, firebush, coontie, Neoregelia, flax lily edging, ti plants and a cabbage palm group.</p><a class="shot " href="img/scene_courtyard.jpg"><img src="img/scene_courtyard.jpg" alt="A walled patio corner: giant bromeliads, a Neoregelia drift, king sago, foxtail agave, ti plants, birds of paradise and foxtail palms." loading="lazy" width="1600" height="800"></a><p class="caption">A walled patio corner: giant bromeliads, a Neoregelia drift, king sago, foxtail agave, ti plants, birds of paradise and foxtail palms.</p><a class="shot " href="img/scene_native.jpg"><img src="img/scene_native.jpg" alt="A back yard: a sand live oak in the lawn, a Simpson&#x27;s stopper screen, crape myrtle, muhly grass, coontie, firebush, perennial peanut and cabbage palms." loading="lazy" width="1600" height="800"></a><p class="caption">A back yard: a sand live oak in the lawn, a Simpson&#x27;s stopper screen, crape myrtle, muhly grass, coontie, firebush, perennial peanut and cabbage palms.</p>
+<h2 id="turntables">Turntables</h2>
+<p>One full turn of each, in the same studio light as the store images.</p>
+<div class="spins"><figure class="spin"><video src="video/bird_of_paradise_turntable.mp4" poster="img/bird_of_paradise_turntable.jpg" autoplay muted loop playsinline preload="metadata" width="720" height="720"></video><figcaption>Bird of paradise</figcaption></figure><figure class="spin"><video src="video/crape_myrtle_turntable.mp4" poster="img/crape_myrtle_turntable.jpg" autoplay muted loop playsinline preload="metadata" width="720" height="720"></video><figcaption>Crape myrtle</figcaption></figure><figure class="spin"><video src="video/sand_live_oak_turntable.mp4" poster="img/sand_live_oak_turntable.jpg" autoplay muted loop playsinline preload="metadata" width="720" height="720"></video><figcaption>Sand live oak</figcaption></figure></div>
 
 <h2 id="plants">Every plant</h2>
 <p>Each in full, close up, and in its four sizes: a new planting and an established yard need different plants, not one plant scaled.</p>
